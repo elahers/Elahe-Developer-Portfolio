@@ -675,4 +675,4 @@ const inputStyle: React.CSSProperties = {
   background: "rgba(255,255,255,0.03)",
   color: "white",
   outline: "none",
-};
+}; 
