@@ -19,6 +19,8 @@ import {
   Workflow,
 } from "lucide-react";
 
+
+
 export default function Page() {
   const systemStatus = [
     "initializing developer profile...",

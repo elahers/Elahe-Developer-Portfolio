@@ -1,7 +1,9 @@
 "use client";
-
+import SiteHeader from "./components/SiteHeader";
+import { Mail } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useEffect, useMemo, useState } from "react";
-
+import Link from "next/link";
 function HeroIntro() {
   const words = useMemo(() => ["Elahe Rasooli", "Software Engineer"], []);
   const [wordIndex, setWordIndex] = useState(0);
@@ -41,7 +43,7 @@ function HeroIntro() {
         display: "flex",
         alignItems: "center",
         justifyContent: "flex-start",
-        fontSize: "clamp(42px, 7vw, 84px)",
+        fontSize: "clamp(42px, 7vw, 40px)",
         fontWeight: 700,
         letterSpacing: "-2px",
         textAlign: "left",
@@ -121,25 +123,84 @@ function Section({
 
 const experiences = [
   {
-    company: "Xplore Inc",
     role: "Technical Support Specialist",
-    period: "2024 - Present",
+    company: "Xplore Inc",
+    period: "2024 – Present",
+
     summary:
-      "Troubleshoot complex network and backend systems across fiber, satellite, and wireless environments. Analyze technical data, resolve reliability issues, and continue building stronger system-level problem-solving skills.",
+      "Troubleshoot complex network and backend systems across fiber, satellite, and wireless environments, strengthening system-level debugging and reliability analysis skills.",
+
+    problem:
+      "Customers experienced connectivity and system reliability issues across diverse network infrastructures, requiring deep investigation beyond surface-level troubleshooting.",
+
+    approach:
+      "Analyzed network performance data, diagnosed issues across fiber, satellite, and wireless systems, and applied structured debugging techniques to isolate root causes across backend and infrastructure layers.",
+
+    impact:
+      "Improved system reliability and issue resolution efficiency while developing strong real-world problem-solving skills in distributed systems and network environments.",
+
+    tech: [
+      "Networking",
+      "System Debugging",
+      "Fiber",
+      "Satellite",
+      "Wireless Systems",
+      "Troubleshooting",
+    ],
   },
+
   {
-    company: "Finecode",
     role: "Full-Stack Developer",
+    company: "Finecode",
     period: "2022",
+
     summary:
-      "Built full-stack web features using ASP.NET, JavaScript, HTML, and CSS. Integrated SQL Server with backend systems, created responsive UI with Bootstrap, and worked within Agile workflows.",
+      "Developed full-stack web applications using ASP.NET and JavaScript, integrating backend systems with responsive user interfaces.",
+
+    problem:
+      "Needed scalable and maintainable web features that could integrate cleanly with backend systems while providing a responsive user experience.",
+
+    approach:
+      "Built backend services with ASP.NET, connected SQL Server databases, and developed responsive frontend components using JavaScript, HTML, CSS, and Bootstrap within Agile workflows.",
+
+    impact:
+      "Delivered functional, user-friendly features with improved frontend responsiveness and reliable backend integration.",
+
+    tech: [
+      "ASP.NET",
+      "JavaScript",
+      "SQL Server",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Agile",
+    ],
   },
+
   {
-    company: "SABAFAM",
     role: "Junior Backend .NET Developer",
-    period: "2019 - 2020",
+    company: "SABAFAM",
+    period: "2019 – 2020",
+
     summary:
-      "Built ASP.NET WebForms and MVC applications, optimized SQL queries and stored procedures, improved frontend behavior, and debugged backend logic for stronger performance.",
+      "Developed and optimized backend systems using ASP.NET WebForms and MVC, focusing on performance and database efficiency.",
+
+    problem:
+      "Backend systems required optimization for performance, maintainability, and more efficient database interactions.",
+
+    approach:
+      "Built and maintained ASP.NET applications, optimized SQL queries and stored procedures, and debugged backend logic to improve system behavior and performance.",
+
+    impact:
+      "Enhanced application performance and stability through improved database efficiency and cleaner backend logic.",
+
+    tech: [
+      "ASP.NET MVC",
+      "WebForms",
+      "SQL Server",
+      "Stored Procedures",
+      "Backend Development",
+    ],
   },
 ];
 
@@ -190,94 +251,32 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState("education");
 
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        background: "#0a0a0a",
-        color: "#fafafa",
-        fontFamily: "Inter, Arial, sans-serif",
-      }}
-    >
-      <nav
-        style={{
-          position: "fixed",
-          top: "140px",
-          left: "40px",
-          display: "flex",
-          flexDirection: "column",
-          gap: "18px",
-          fontSize: "13px",
-          letterSpacing: "1.5px",
-          textTransform: "uppercase",
-          zIndex: 10,
-        }}
-      >
-        <button
-          onClick={() => setActiveSection("education")}
-          style={{
-            ...sidebarButton,
-            color: activeSection === "education" ? "#fafafa" : "#737373",
-          }}
-        >
-          Education
-        </button>
 
-        <button
-          onClick={() => setActiveSection("experience")}
-          style={{
-            ...sidebarButton,
-            color: activeSection === "experience" ? "#fafafa" : "#737373",
-          }}
-        >
-          Experience
-        </button>
 
-        <button
-          onClick={() => setActiveSection("projects")}
-          style={{
-            ...sidebarButton,
-            color: activeSection === "projects" ? "#fafafa" : "#737373",
-          }}
-        >
-          Projects
-        </button>
+    <div className="min-h-screen bg-black text-white">
+  <SiteHeader />
 
-        <button
-          onClick={() => setActiveSection("skills")}
-          style={{
-            ...sidebarButton,
-            color: activeSection === "skills" ? "#fafafa" : "#737373",
-          }}
-        >
-          Skills
-        </button>
-      </nav>
+  <main className="mx-auto max-w-6xl px-6 md:px-10 py-16">
+     <div>
 
-      <div
-        style={{
-          maxWidth: 980,
-          margin: "0 auto",
-          padding: "40px 24px 88px 190px",
-        }}
-      >
-        <section style={{ marginBottom: 56 }}>
-          <p
+        <section >
+          <div
             style={{
               fontSize: 12,
               letterSpacing: 5,
-              textTransform: "uppercase",
+
               color: "#a3a3a3",
-              marginBottom: 18,
+              marginTop: 156,
             }}
           >
-            elahe.dev
-          </p>
+            Software Engineering . MCS @ University of New Brunswick
+          </div>
 
           <HeroIntro />
 
           <p
             style={{
-              fontSize: "clamp(18px, 2.1vw, 24px)",
+              fontSize: "clamp(18px, 2.1vw, 14px)",
               color: "#d4d4d8",
               marginTop: 14,
               lineHeight: 1.7,
@@ -294,16 +293,25 @@ export default function Home() {
             reliable.
           </p>
 
-          <div style={{ marginTop: 26 }}>
+          <div
+            style={{
+              marginTop: 26,
+              display: "flex",
+              alignItems: "center",
+              gap: "12px",
+              flexWrap: "wrap",
+            }}
+          >
+            {/* Location */}
             <div
               style={{
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "8px",
                 color: "#d4d4d8",
-                fontSize: "16px",
+                fontSize: "14px",
                 border: "1px solid rgba(255,255,255,0.12)",
-                borderRadius: 999,
+                borderRadius: "999px",
                 padding: "10px 14px",
               }}
             >
@@ -321,150 +329,43 @@ export default function Home() {
               </svg>
               New Brunswick, Canada
             </div>
-          </div>
 
-          <div style={{ display: "flex", gap: 12, marginTop: 28, flexWrap: "wrap" }}>
-            <a href="/SoftwareElahe.pdf" download style={primaryButton}>
+            {/* Resume Button */}
+            <a
+              href="/SoftwareElahe.pdf"
+              download
+
+
+
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "14px",
+                border: "1px solid white",
+                borderRadius: "999px",
+                padding: "10px 14px",
+                background: "white",
+                color: "#020617",
+                textDecoration: "none",
+                transition: "all 0.2s ease",
+              }}
+            >
               Download Resume
             </a>
-            <a
-              href="https://github.com/elahers"
-              target="_blank"
-              rel="noreferrer"
-              style={secondaryButton}
-            >
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com/in/elahe-rasooli-7a4431274"
-              target="_blank"
-              rel="noreferrer"
-              style={secondaryButton}
-            >
-              LinkedIn
-            </a>
           </div>
 
-         
+
+
+
         </section>
 
-        <div style={{ marginTop: 70 }}>
-          {activeSection === "education" && (
-            <Section label="Education" title="Academic background.">
-              <div style={{ display: "grid", gap: 22 }}>
-                <div style={rowStyle}>
-                  <div style={leftColStyle}>Master of Computer Science</div>
-                  <div>
-                    <h3 style={itemTitleStyle}>University of New Brunswick</h3>
-                    <p style={bodyText}>
-                      Graduate studies focused on strengthening my technical
-                      foundation and continuing to grow my skills in software
-                      development and computer science.
-                    </p>
-                  </div>
-                </div>
 
-                <div style={rowStyle}>
-                  <div style={leftColStyle}>Bachelor of Computer Engineering</div>
-                  <div>
-                    <h3 style={itemTitleStyle}>
-                      K. N. Toosi University of Technology
-                    </h3>
-                    <p style={bodyText}>
-                      Built a strong base in programming, engineering problem
-                      solving, and core software concepts that shaped my path
-                      into development.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </Section>
-          )}
-
-          {activeSection === "experience" && (
-            <Section
-              label="Experience"
-              title="Experience across systems, support, and development."
-            >
-              <div style={{ display: "grid", gap: 22 }}>
-                {experiences.map((item) => (
-                  <div key={item.company} style={rowStyle}>
-                    <div style={leftColStyle}>{item.period}</div>
-                    <div>
-                      <h3 style={itemTitleStyle}>{item.role}</h3>
-                      <p
-                        style={{
-                          ...bodyText,
-                          marginTop: 6,
-                          fontWeight: 600,
-                          color: "#e5e7eb",
-                        }}
-                      >
-                        {item.company}
-                      </p>
-                      <p style={{ ...bodyText, marginTop: 12 }}>{item.summary}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </Section>
-          )}
-
-          {activeSection === "projects" && (
-            <Section
-              label="Projects"
-              title="Projects that reflect practical, hands-on development."
-            >
-              <div style={{ display: "grid", gap: 24 }}>
-                {projects.map((project) => (
-                  <div key={project.name} style={projectRowStyle}>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        gap: 16,
-                        alignItems: "baseline",
-                        flexWrap: "wrap",
-                      }}
-                    >
-                      <h3 style={itemTitleStyle}>{project.name}</h3>
-                      <span style={{ color: "#a3a3a3" }}>{project.type}</span>
-                    </div>
-
-                    <p style={{ ...bodyText, marginTop: 14 }}>
-                      {project.description}
-                    </p>
-
-                    <div
-                      style={{
-                        display: "flex",
-                        flexWrap: "wrap",
-                        gap: 10,
-                        marginTop: 14,
-                      }}
-                    >
-                      {project.tech.map((item) => (
-                        <Pill key={item} text={item} />
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </Section>
-          )}
-
-          {activeSection === "skills" && (
-            <Section label="Skills" title="Technologies I’ve worked with.">
-              <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-                {skills.map((item) => (
-                  <Pill key={item} text={item} />
-                ))}
-              </div>
-            </Section>
-          )}
-        </div>
+       
       </div>
-    </main>
+  </main>
+</div>
+   
   );
 }
 
@@ -532,4 +433,12 @@ const itemTitleStyle: React.CSSProperties = {
   margin: 0,
   fontSize: 28,
   lineHeight: 1.2,
+};
+
+const tagStyle = {
+  border: "1px solid rgba(255,255,255,0.12)",
+  borderRadius: "999px",
+  padding: "6px 10px",
+  fontSize: "13px",
+  color: "#d4d4d8",
 };
