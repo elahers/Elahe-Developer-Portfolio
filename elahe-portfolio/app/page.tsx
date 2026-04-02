@@ -257,122 +257,114 @@ export default function Home() {
 
 
     <div className="min-h-screen bg-black text-white">
-  <SiteHeader />
+      <SiteHeader />
 
-  <main className="mx-auto max-w-6xl px-6 md:px-10 py-16">
-     <div>
+      <main className="mx-auto max-w-6xl px-6 md:px-10 ">
+        <div>
 
-        <section >
-          <div
-            style={{
-              fontSize: 12,
-              letterSpacing: 5,
-
-              color: "#a3a3a3",
-              marginTop: 156,
-            }}
-          >
-            Software Engineering . MCS @ University of New Brunswick
-          </div>
-
-          <HeroIntro />
-
-          <p
-            style={{
-              fontSize: "clamp(18px, 2.1vw, 14px)",
-              color: "#d4d4d8",
-              marginTop: 14,
-              lineHeight: 1.7,
-              maxWidth: 760,
-            }}
-          >
-            Full-Stack .NET Developer with experience building web applications
-            using ASP.NET, SQL Server, and modern frontend tools. I enjoy
-            working across both backend and frontend parts of an application,
-            focusing on writing clear, maintainable code and building features
-            that solve practical problems. As I continue growing as a developer,
-            I’m interested in improving backend systems, working with APIs and
-            databases, and creating user interfaces that feel simple and
-            reliable.
-          </p>
-
-          <div
-            style={{
-              marginTop: 26,
-              display: "flex",
-              alignItems: "center",
-              gap: "12px",
-              flexWrap: "wrap",
-            }}
-          >
-            {/* Location */}
+          <section >
             <div
               style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "8px",
-                color: "#d4d4d8",
-                fontSize: "14px",
-                border: "1px solid rgba(255,255,255,0.12)",
-                borderRadius: "999px",
-                padding: "10px 14px",
+                fontSize: 12,
+                letterSpacing: 5,
+
+                color: "#a3a3a3",
+                 marginTop: 96,
               }}
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M12 21s7-4.35 7-10a7 7 0 1 0-14 0c0 5.65 7 10 7 10z" />
-                <circle cx="12" cy="11" r="3" />
-              </svg>
-              New Brunswick, Canada
+              Software Engineering . MCS @ University of New Brunswick
             </div>
 
-            {/* Resume Button */}
-            <a
-              href="/SoftwareElahe.pdf"
-              download
+            <HeroIntro />
 
-
-
+            <p
               style={{
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: "14px",
-                border: "1px solid white",
-                borderRadius: "999px",
-                padding: "10px 14px",
-                background: "white",
-                color: "#020617",
-                textDecoration: "none",
-                transition: "all 0.2s ease",
+                fontSize: "clamp(18px, 2.1vw, 14px)",
+                color: "#d4d4d8",
+                marginTop: 14,
+                lineHeight: 1.7,
+                maxWidth: 760,
               }}
             >
-              Download Resume
-            </a>
-          </div>
+              Full-Stack .NET Developer with experience building web applications
+              using ASP.NET, SQL Server, and modern frontend tools. I enjoy
+              working across both backend and frontend parts of an application,
+              focusing on writing clear, maintainable code and building features
+              that solve practical problems. As I continue growing as a developer,
+              I’m interested in improving backend systems, working with APIs and
+              databases, and creating user interfaces that feel simple and
+              reliable.
+            </p>
+
+            <div
+              style={{
+                marginTop: 26,
+                display: "flex",
+                alignItems: "center",
+                gap: "12px",
+                flexWrap: "wrap",
+              }}
+            >
+              {/* Location */}
+              <div
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  color: "#d4d4d8",
+                  fontSize: "14px",
+                  border: "1px solid rgba(255,255,255,0.12)",
+                  borderRadius: "999px",
+                  padding: "10px 14px",
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 21s7-4.35 7-10a7 7 0 1 0-14 0c0 5.65 7 10 7 10z" />
+                  <circle cx="12" cy="11" r="3" />
+                </svg>
+                New Brunswick, Canada
+              </div>
+
+              {/* Resume Button */}
+              <a
+                href="/SoftwareElahe.pdf"
+                download
 
 
 
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: "14px",
+                  border: "1px solid white",
+                  borderRadius: "999px",
+                  padding: "10px 14px",
+                  background: "white",
+                  color: "#020617",
+                  textDecoration: "none",
+                  transition: "all 0.2s ease",
+                }}>
+                Download Resume
+              </a>
+            </div>
+          </section>
+        </div>
+      </main>
 
-        </section>
-
-
-       
+      <div className="mx-auto max-w-6xl px-6 pb-10 md:px-10 ">
+        <Footer />
       </div>
-  </main>
-
-   <div className="mx-auto max-w-6xl px-6 pb-10 md:px-10">
-      <Footer />
     </div>
-</div>
-   
+
   );
 }
 
