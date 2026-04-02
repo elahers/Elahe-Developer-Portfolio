@@ -102,6 +102,9 @@ export default function ExperiencePage() {
           </section>
         </motion.div>
       </main>
+      <div className="mx-auto max-w-6xl px-6 pb-10 md:px-10">
+            <Footer />
+          </div>
     </div>
   );
 }

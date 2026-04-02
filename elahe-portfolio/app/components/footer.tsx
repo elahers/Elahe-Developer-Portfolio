@@ -7,7 +7,7 @@ export default function Footer() {
 
       <div className="flex items-center gap-6 text-white/70">
         <a
-          href="mailto:EllaHedadRusselly@UMB.ca"
+          href="mailto:elahe.rasooli@unb.ca"
           className="transition hover:text-white"
           aria-label="Email"
         >
@@ -28,7 +28,7 @@ export default function Footer() {
         </a>
 
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/elahe-rasooli-7a4431274"
           target="_blank"
           rel="noreferrer"
           className="transition hover:text-white"
@@ -46,7 +46,7 @@ export default function Footer() {
         </a>
 
         <a
-          href="https://github.com/"
+          href="https://github.com/elahers"
           target="_blank"
           rel="noreferrer"
           className="transition hover:text-white"
@@ -65,7 +65,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-8 text-xs tracking-[0.18em] text-white/40">
-        © {new Date().getFullYear()} EllaHedad
+        © {new Date().getFullYear()} Elahe Rasooli
       </div>
     </footer>
   );

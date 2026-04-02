@@ -1,9 +1,12 @@
 "use client";
 import SiteHeader from "./components/SiteHeader";
+import Footer from "./components/footer";
 import { Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+
+
 function HeroIntro() {
   const words = useMemo(() => ["Elahe Rasooli", "Software Engineer"], []);
   const [wordIndex, setWordIndex] = useState(0);
@@ -364,6 +367,10 @@ export default function Home() {
        
       </div>
   </main>
+
+   <div className="mx-auto max-w-6xl px-6 pb-10 md:px-10">
+      <Footer />
+    </div>
 </div>
    
   );
