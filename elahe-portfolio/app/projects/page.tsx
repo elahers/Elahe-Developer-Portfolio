@@ -4,18 +4,43 @@ import Footer from "../components/footer";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-
 const projects = [
+  {
+    year: "",
+    title: "Portfolio Website",
+    category: "Personal Project",
+    description:
+      "A modern portfolio website designed to showcase projects, experience, and technical skills.",
+    details: [
+      "Built with a focus on clean UI, performance, and responsive design using modern web technologies.",
+      "Structured content to highlight full-stack development experience and improve recruiter readability.",
+      "Integrated GitHub and deployed on a custom domain for easy access to projects and code.",
+    ],
+    href: "https://elaherasooli.xyz",
+  },
+  {
+    year: "",
+    title: "Air Quality Prediction using Machine Learning",
+    category: "Machine Learning Project",
+    description:
+      "A machine learning system for predicting air quality using historical environmental data.",
+    details: [
+      "Developed models using OpenAQ data including CO and NO2 measurements across time and location.",
+      "Analyzed environmental factors such as weather, traffic, and industrial activity to improve prediction accuracy.",
+      "Built data pipelines for preprocessing, feature extraction, and model training.",
+    ],
+    href: "#",
+  },
   {
     year: "",
     title: "FrameItLive",
     category: "E-Commerce Application",
     description:
-      "A full-stack e-commerce system enabling users to customize picture frames with real-time previews.",
+      "A full-stack web application enabling real-time customization of picture frames.",
     details: [
-      "Built using HTML5, CSS3, JavaScript, Bootstrap, SQL Server, jQuery, AJAX, and Git/GitHub.",
-      "Designed backend logic for pricing, product management, and user selections.",
-      "Implemented dynamic UI components for interactive customization.",
+      "Developed using HTML5, CSS3, JavaScript, Bootstrap, SQL Server, jQuery, and AJAX.",
+      "Designed backend logic for pricing, product management, and user workflows.",
+      "Implemented dynamic UI components for interactive customization and real-time updates.",
     ],
     href: "#",
   },
@@ -26,9 +51,9 @@ const projects = [
     description:
       "A system for storing and reusing job application responses with dynamic form interactions.",
     details: [
-      "Built using HTML5, CSS3, JavaScript, C, and ASP.NET Core.",
-      "Developed backend APIs for CRUD operations and template management.",
-      "Designed a responsive UI with dynamic form updates.",
+      "Built using ASP.NET Core, C#, HTML5, CSS3, and JavaScript.",
+      "Implemented RESTful APIs (REST APIs) for CRUD operations and template management.",
+      "Designed a responsive UI with dynamic form handling and structured data models.",
     ],
     href: "#",
   },
@@ -55,7 +80,7 @@ export default function ProjectsPage() {
               Projects
             </h1>
             <p className="mt-6 max-w-md text-sm leading-7 text-white/60 md:text-base">
-              A focused collection of engineering and product work across full-stack systems and interactive applications.
+             
             </p>
           </section>
 

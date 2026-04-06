@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import SiteHeader from "../components/SiteHeader";
 import Footer from "../components/footer";
-
 const experience = [
   {
     years: "May 2024 — Present",
@@ -12,10 +11,34 @@ const experience = [
     company: "Xplore Inc.",
     location: "Fredericton, New Brunswick",
     description: [
-      "Troubleshoot and optimize complex network configurations across fiber, satellite, and wireless systems.",
-      "Document technical issues with engineering-level clarity, improving backend visibility and tracking accuracy.",
-      "Analyze network data and case trends to recommend system-level improvements.",
-      "Support users across web interfaces, internal systems, and third-party tools.",
+      "Diagnose and resolve complex issues across fiber, satellite, and wireless network systems in a high-volume environment",
+      "Document technical issues and system behavior to improve backend visibility and support engineering workflows",
+      "Analyze network data and recurring cases to identify system-level issues and improve reliability",
+      "Support users across web applications, internal systems, and APIs",
+    ],
+  },
+  {
+    years: "Sep 2022 — Mar 2024",
+    role: "Teaching Assistant (Graduate)",
+    company: "University of New Brunswick",
+    location: "Fredericton, New Brunswick",
+    description: [
+      "Evaluated assignments and examinations, ensuring accurate grading aligned with course standards",
+      "Led tutorials and supported instruction in numerical linear algebra and algorithmic concepts",
+      "Collaborated with instructors to refine course materials and improve clarity of technical content",
+      "Assisted students in debugging code and understanding computational methods",
+    ],
+  },
+  {
+    years: "Sep 2021 — Aug 2022",
+    role: "Research Assistant",
+    company: "K. N. Toosi University of Technology",
+    location: "Tehran, Iran",
+    description: [
+      "Designed and implemented algorithms for shape reconstruction from dot patterns",
+      "Conducted data analysis and experimental validation to ensure accuracy and reproducibility",
+      "Developed and refined computational methods for algorithmic optimization",
+      "Co-authored a research paper published in The Journal of Supercomputing (Springer, 2024)",
     ],
   },
   {
@@ -24,11 +47,11 @@ const experience = [
     company: "Finecode",
     location: "Tehran, Iran",
     description: [
-      "Built full-stack features using ASP.NET and modern frontend technologies.",
-      "Integrated SQL Server databases to support dynamic web applications.",
-      "Developed responsive interfaces with Bootstrap for consistent cross-device UX.",
-      "Worked within Agile workflows with version control and structured deployment.",
-      "Wrote maintainable C# code and performed unit testing.",
+      "Developed full-stack web applications using ASP.NET, C#, and SQL Server",
+      "Built responsive UI components using HTML5, CSS3, JavaScript, and Bootstrap",
+      "Implemented RESTful APIs (REST APIs) for frontend-backend communication",
+      "Designed and integrated relational databases to support dynamic application features",
+      "Wrote clean, maintainable C# code and performed unit testing",
     ],
   },
   {
@@ -37,11 +60,11 @@ const experience = [
     company: "SABAFAM",
     location: "Tehran, Iran",
     description: [
-      "Developed ASP.NET WebForms and MVC applications and maintained legacy systems.",
-      "Optimized SQL Server queries, stored procedures, and triggers.",
-      "Improved UI/UX using JavaScript, CSS, and Bootstrap.",
-      "Debugged backend logic and improved system performance.",
-      "Participated in code reviews and requirement analysis.",
+      "Developed backend systems using ASP.NET WebForms and MVC and maintained legacy applications",
+      "Optimized SQL Server queries, stored procedures, and triggers to improve data handling",
+      "Enhanced UI components using JavaScript, CSS, and Bootstrap",
+      "Debugged backend logic and improved system stability and performance",
+      "Participated in code reviews and requirement analysis to ensure code quality",
     ],
   },
 ];
@@ -66,8 +89,7 @@ export default function ExperiencePage() {
               Experience
             </h1>
             <p className="mt-6 max-w-md text-sm leading-7 text-white/60 md:text-base">
-              A snapshot of the roles, teams, and projects that have shaped my
-              design and product perspective.
+              
             </p>
           </section>
 

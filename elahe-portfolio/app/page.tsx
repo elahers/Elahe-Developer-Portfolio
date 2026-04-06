@@ -256,10 +256,10 @@ export default function Home() {
   return (
 
 
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white  ">
       <SiteHeader />
 
-      <main className="mx-auto max-w-6xl px-6 md:px-10 ">
+      <main className="mx-auto max-w-6xl px-6 md:px-10  min-h-[55vh]">
         <div>
 
           <section >
@@ -272,7 +272,7 @@ export default function Home() {
                  marginTop: 96,
               }}
             >
-              Software Engineering . MCS @ University of New Brunswick
+             Full-Stack .NET Developer | MCS @ University of New Brunswick
             </div>
 
             <HeroIntro />
@@ -286,14 +286,7 @@ export default function Home() {
                 maxWidth: 760,
               }}
             >
-              Full-Stack .NET Developer with experience building web applications
-              using ASP.NET, SQL Server, and modern frontend tools. I enjoy
-              working across both backend and frontend parts of an application,
-              focusing on writing clear, maintainable code and building features
-              that solve practical problems. As I continue growing as a developer,
-              I’m interested in improving backend systems, working with APIs and
-              databases, and creating user interfaces that feel simple and
-              reliable.
+              Full-stack .NET developer with experience building scalable web applications using C#, ASP.NET Core, and SQL Server. Strong in backend development, REST API design, and database optimization, with a focus on performance and maintainability.
             </p>
 
             <div

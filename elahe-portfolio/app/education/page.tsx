@@ -11,17 +11,16 @@ const education = [
     school: "University of New Brunswick",
     program: "Master of Computer Science",
     description:
-      "Advanced studies focused on software systems, problem solving, and computational thinking.",
+      "Specialized in software systems, algorithm design, and computational methods, with a focus on building efficient and scalable solutions.",
   },
   {
     years: "",
     school: "K. N. Toosi University of Technology",
     program: "Bachelor of Computer Engineering",
     description:
-      "Built a strong foundation in engineering principles, programming, and system design.",
+      "Developed a solid foundation in software engineering, programming, and system design, with strong emphasis on problem solving and technical fundamentals.",
   },
 ];
-
 export default function EducationPage() {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -42,8 +41,7 @@ export default function EducationPage() {
               Education
             </h1>
             <p className="mt-6 max-w-md text-sm leading-7 text-white/60 md:text-base">
-              My academic experience, learning foundations, and the environments
-              that shaped the way I think and build.
+              
             </p>
           </section>
 
